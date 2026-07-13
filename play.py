@@ -3,12 +3,19 @@ import asyncio
 import sys
 
 from google.adk.runners import InMemoryRunner
+from google.adk.agents import SequentialAgent
 from google.genai import types
 
 from agents.explainer_agent import explainer_agent
+from agents.practice_designer_agent import designer_agent
 
 APP_NAME = "ai-agents-intro"
 USER_ID = "student"
+
+pipeline = SequentialAgent(
+    name= "explain_then_design",
+    sub_agents= [explainer_agent, designer_agent]
+)
 
 
 async def explain(runner, topic):
@@ -36,7 +43,7 @@ async def explain(runner, topic):
 
 
 async def main(topics):
-    runner = InMemoryRunner(agent=explainer_agent, app_name=APP_NAME)
+    runner = InMemoryRunner(agent=pipeline, app_name=APP_NAME)
     for topic in topics:
         await explain(runner, topic)
 
@@ -44,5 +51,5 @@ async def main(topics):
 if __name__ == "__main__":
     # Use topics from the command line, or fall back to two test topics.
     args = sys.argv[1:]
-    topics = args if args else ["Python decorators", "HTTP status codes"]
+    topics = args if args else ["SQL"]
     asyncio.run(main(topics))
