@@ -18,7 +18,8 @@ async def explain(runner, topic):
     )
     message = types.Content(
         role="user",
-        parts=[types.Part(text=f"Explain this topic to a beginner: {topic}")],
+        parts=[types.Part(text=f"Explain briefly {topic} to a beginner, then save it to output/{topic}.md using your tool.")],
+
     )
 
     print(f"\n{'=' * 60}\nTOPIC: {topic}\n{'=' * 60}")

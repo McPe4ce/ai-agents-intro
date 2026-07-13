@@ -1,0 +1,12 @@
+# Core agent framework
+google-adk==2.4.0
+
+# Model routing — used via LiteLlm to reach the local Ollama model
+litellm==1.92.0
+
+# Required by LiteLLM's tool/function-calling path. Without it the agent
+# crashes the moment a tool is registered (ModuleNotFoundError: orjson).
+orjson==3.11.9
+
+# Content/Part types used to build messages sent to the agent
+google-genai==2.11.0
