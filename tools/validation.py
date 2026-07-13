@@ -11,13 +11,10 @@ REQUIRED_SECTIONS = [
     "Final Summary",
 ]
 
-def validate_required_sections(markdown: str):
-    with open(markdown, 'r', encoding="utf-8") as f:
-        file = f.read()
-    
+def validate_required_sections(content):
     missing = []
     for sects in REQUIRED_SECTIONS:
-        if sects not in file:
+        if sects not in content:
             missing.append(sects)
 
     result = {
