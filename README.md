@@ -1,7 +1,3 @@
-***
-
-## 💡 Standard README Template (Copy this)
-
 ```markdown
 # Project Name Goes Here 🚀
 
