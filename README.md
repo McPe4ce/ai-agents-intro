@@ -1,5 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/) # Adjust this badge
+[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 
 ## ✨ Overview
 *Short, compelling description of your project.* What problem does it solve? Why should someone use it? Keep this section engaging and brief—it's the elevator pitch for your code!
