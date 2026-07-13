@@ -8,13 +8,14 @@ from google.genai import types
 
 from agents.explainer_agent import explainer_agent
 from agents.practice_designer_agent import designer_agent
+from agents.reviewer_agent import reviewer_agent
 
 APP_NAME = "ai-agents-intro"
 USER_ID = "student"
 
 pipeline = SequentialAgent(
     name= "explain_then_design",
-    sub_agents= [explainer_agent, designer_agent]
+    sub_agents= [explainer_agent, designer_agent, reviewer_agent]
 )
 
 
