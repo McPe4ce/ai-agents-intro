@@ -80,31 +80,3 @@ We welcome pull requests and bug reports! Please read our [Contributing Guidelin
 ## 📄 License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
-
-***
-
-## 📝 Step-by-Step Guide: What to Write in Each Section
-
-To make your README perfect, answer these questions and plug the answers into the corresponding sections of the template above:
-
-### 🚀 Project Name & Overview (The Pitch)
-*   **What is the name of the project?** (Use this for the main title).
-*   **What does it do?** In one to three sentences, explain its purpose. *Goal:* Get a visitor excited enough to keep reading.
-
-### ✨ Features (Scope Management)
-*   List 3-5 key capabilities. Don't list "It works." List specific functions: "Generates PDF reports," or "Processes data in batches."
-
-### 🔧 Prerequisites & Setup (The Getting Started Guide)
-*   **Dependencies:** What *must* be installed first? (e.g., Node.js, Python, Redis, Docker). Be precise with versions (e.g., `Python 3.9+`).
-*   **Installation Steps:** Break the process down into numbered steps:
-    1.  How to clone the repository (`git clone...`).
-    2.  How to set up an isolated environment (e.g., virtual environments, `npm install`).
-    3.  If there are required keys or credentials, explain how to create a `.env` file and fill it out.
-
-### 🚀 Usage (The Walkthrough)
-*   **Show, don't tell.** Do not just say "Run the script." Provide the exact terminal commands the user must run to make the project work in its simplest case.
-*   Include multiple examples if the functionality is complex (e.g., Example A: Basic usage; Example B: Advanced API calls).
-
-### 📚 Contributing & License
-*   **Contribution:** If you want others to contribute, tell them *how*. Point them to a `CONTRIBUTING.md` file and explain your development standards (code style, testing, etc.).
-*   **License:** Always include a license file (`LICENSE`) and state the license type in the README.
