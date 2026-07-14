@@ -4,6 +4,8 @@ from pathlib import Path
 
 def save_markdown_file(file_path: str, content: str ):
     path = Path(file_path)
+    if path is None:
+        raise ValueError("File path doesnt exist")
     
     path.parent.mkdir(parents=True, exist_ok=True)
     
